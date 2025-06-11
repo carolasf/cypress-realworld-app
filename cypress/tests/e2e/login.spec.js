@@ -1,4 +1,6 @@
+import { last } from 'lodash';
 import userData from '../../fixtures/userData.json';
+import { sign } from 'crypto';
 
 describe('Login Tests', () => {
 
@@ -8,9 +10,19 @@ describe('Login Tests', () => {
     loginButton: "[data-test='signin-submit']",
     tabList: "[data-test='nav-transaction-tabs']",
     wrongCredenntialAlert: "[role='alert']",
+    signupLink: "[data-test='signup']",
+    firstnameFieldSignup: "[data-test='signup-first-name']",
+    lastnameFieldSignup: "[data-test='signup-last-name']",
+    usernameFieldSignup: "[data-test='signup-username']",
+    passwordFieldSignup: "[data-test='signup-password']",
+    confirmPasswordFieldSignup: "[data-test='signup-confirmPassword']",
+    signupButton: "[data-test='signup-submit']",
+
+
+
   }
 
-  
+
     it('Deve fazer login com usuário válido', () => {
       cy.visit('/signin')
       cy.get(selectorsList.usernameField).type(userData.userSuccess.username)
@@ -27,29 +39,25 @@ describe('Login Tests', () => {
       cy.get(selectorsList.wrongCredenntialAlert) 
     });
 
+    it('Deve registrar um novo usuário com informações válidas', () => {
+      cy.visit('/signin')
+      cy.get(selectorsList.signupLink).click();
+       // Preenche os campos do formulário
+      cy.get(selectorsList.firstnameFieldSignup).type('Carolina');
+      cy.get(selectorsList.lastnameFieldSignup).type('Ferreira');
+      cy.get(selectorsList.usernameFieldSignup).type('carol_teste_' + Date.now()); // username único
+      cy.get(selectorsList.passwordFieldSignup).type('SenhaSegura123!');
+      cy.get(selectorsList.confirmPasswordFieldSignup).type('SenhaSegura123!');
+  
+      // Envia o formulário
+      cy.get(selectorsList.signupButton).click();
+  
+      // Verifica se foi redirecionado para a página de login com sucesso
+      cy.url().should('include', '/signin');
+      });
   })
 
   
-/*
-  describe('Registro de novo usuário com sucesso', () => {
-    it('Deve registrar um novo usuário com informações válidas', () => {
-      cy.visit('/signup')
-       // Preenche os campos do formulário
-    cy.get("#firstName").type('Carolina');
-    cy.get("#lastName").type('Ferreira');
-    cy.get('[data-test="username"]').type('carol_teste_' + Date.now()); // username único
-    cy.get('[data-test="password"]').type('SenhaSegura123!');
-    cy.get('[data-test="confirmPassword"]').type('SenhaSegura123!');
-
-    // Envia o formulário
-    cy.get('button[type="submit"]').click();
-
-    // Verifica se foi redirecionado para a página de login com sucesso
-    cy.url().should('include', '/signin');
-    cy.contains('Conta criada com sucesso').should('be.visible');
-  });
-});
-*/
-
+   
    
   
