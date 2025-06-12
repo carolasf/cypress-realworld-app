@@ -74,50 +74,6 @@
       "balance": 49474,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
-    },
-    {
-      "id": "lgOlnc0bF",
-      "uuid": "a0b2d6f7-e34f-48bb-99ba-c41270fb25b6",
-      "firstName": "Carolina",
-      "lastName": "Ferreira",
-      "username": "carol_teste_1749605040938",
-      "password": "$2a$10$uvG38fezrhxlUiVyrH1E1.7SW7FyPPrQG4MMuQrof/KgJLPB09A9a",
-      "balance": 0,
-      "createdAt": "2025-06-11T01:24:04.288Z",
-      "modifiedAt": "2025-06-11T01:24:04.288Z"
-    },
-    {
-      "id": "dl9ap4Dvv",
-      "uuid": "a79d5c47-814a-4db2-b72b-2d34a900e971",
-      "firstName": "Carolina",
-      "lastName": "Ferreira",
-      "username": "carol_teste_",
-      "password": "$2a$10$5krEgdBlF5zgFpd7iQOX6u44cvquuBXVV/K0Z68Aj43euyui/MVt6",
-      "balance": 0,
-      "createdAt": "2025-06-11T01:24:32.634Z",
-      "modifiedAt": "2025-06-11T01:24:32.634Z"
-    },
-    {
-      "id": "_O4GffHq6",
-      "uuid": "68063c9f-4fc1-4c0e-a733-6f103bfaf6e6",
-      "firstName": "Carolina",
-      "lastName": "Ferreira",
-      "username": "carol_teste_'",
-      "password": "$2a$10$uP6zm.9agLOqI39CQYSKn.tOXrrx589R25BSKhXn7mlIS7HsCbfbq",
-      "balance": 0,
-      "createdAt": "2025-06-11T01:25:23.246Z",
-      "modifiedAt": "2025-06-11T01:25:23.246Z"
-    },
-    {
-      "id": "jKJEaF0vv",
-      "uuid": "a0bc6f01-e113-47ed-b44a-fffdaad212a8",
-      "firstName": "Carolina",
-      "lastName": "Ferreira",
-      "username": "carol_teste_1749605185090",
-      "password": "$2a$10$uZG60Nj5ixALSluT5Mzpl.KZmFyQYuUA5xmuqd5Bxxpt67AqvEdDe",
-      "balance": 0,
-      "createdAt": "2025-06-11T01:26:28.387Z",
-      "modifiedAt": "2025-06-11T01:26:28.387Z"
     }
   ],
   "contacts": [
