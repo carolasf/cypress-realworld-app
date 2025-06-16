@@ -6,5 +6,19 @@
   "userFail": {
     "username": "TestFail",
     "password": "TestFail"
+  },
+  "newUserSuccess": {
+  "firstName": "Heath",
+  "lastName": "Harris",
+  "username": "Heath93",
+  "password": "s3cret",
+  "confirmPassword": "s3cret"
+  },
+  "newUserFail": {
+    "firstName": "Heath",
+    "lastName": "Harris",
+    "username": "Heath93",
+    "password": "s3cret",
+    "confirmPassword": "wrongPassword"
   }
 }
