@@ -12,6 +12,7 @@ class SignupPage{
             confirmPasswordFieldSignup: "[data-test='signup-confirmPassword']",
             signupButton: "[data-test='signup-submit']",
             errorMessage: "[data-test='signup-first-name']",
+            errorMessagePassword: "[data-test='signup-confirmPassword']",
         }   
         
         return selectors;
@@ -34,6 +35,9 @@ class SignupPage{
         cy.get(this.selectorsList().errorMessage).should('contain', 'First Name is required');
     }
 
+    validatePasswordMismatchError() {
+        cy.get(this.selectorsList().errorMessagePassword).should('contain', 'Passwords does not match');
+    }
     
 
 }
