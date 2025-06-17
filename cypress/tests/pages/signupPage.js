@@ -36,7 +36,7 @@ class SignupPage{
     }
 
     validatePasswordMismatchError() {
-        cy.get(this.selectorsList().errorMessagePassword).should('contain', 'Passwords does not match');
+        cy.get(this.selectorsList().errorMessagePassword).should('contain', 'Password does not match');
     }
     
 

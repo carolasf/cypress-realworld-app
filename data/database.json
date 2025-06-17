@@ -11,7 +11,7 @@
       "phoneNumber": "398-225-9900",
       "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 150953,
+      "balance": 50953,
       "createdAt": "2023-03-09T22:26:40.101Z",
       "modifiedAt": "2024-03-07T10:07:57.580Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "410-786-2112",
       "avatar": "https://avatars.dicebear.com/api/human/GjWovtg2hr.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 93026,
+      "balance": 193026,
       "createdAt": "2023-04-23T13:52:10.979Z",
       "modifiedAt": "2024-03-07T09:07:46.709Z"
     },
@@ -9855,6 +9855,31 @@
       "requestResolvedAt": "",
       "createdAt": "2023-11-10T07:15:28.127Z",
       "modifiedAt": "2024-03-07T21:58:09.668Z"
+    },
+    {
+      "id": "DzupMvNZL",
+      "uuid": "940a72a7-0869-41d2-8655-3e92ab1e08a9",
+      "amount": 200,
+      "description": "w",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2025-06-17T18:33:44.018Z",
+      "modifiedAt": "2025-06-17T18:33:44.018Z"
+    },
+    {
+      "id": "d4hdciRlJ",
+      "uuid": "8a6569e7-f8da-4a6b-a9d5-788bdec5835b",
+      "amount": 100000,
+      "description": "Transferência para Carolina",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2025-06-17T19:12:12.735Z",
+      "modifiedAt": "2025-06-17T19:12:12.735Z"
     }
   ],
   "likes": [
@@ -10431,6 +10456,26 @@
       "isRead": false,
       "createdAt": "2024-02-01T18:53:45.699Z",
       "modifiedAt": "2024-03-07T17:13:52.110Z"
+    },
+    {
+      "id": "MFu4Yu5THc",
+      "uuid": "53b158c3-a503-4038-a909-9f6d64d5576e",
+      "userId": "GjWovtg2hr",
+      "transactionId": "DzupMvNZL",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2025-06-17T18:33:44.027Z",
+      "modifiedAt": "2025-06-17T18:33:44.027Z"
+    },
+    {
+      "id": "IaGz1tNRGN",
+      "uuid": "02c13de0-ec3f-44bb-8c62-538f178c09a2",
+      "userId": "GjWovtg2hr",
+      "transactionId": "d4hdciRlJ",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2025-06-17T19:12:12.761Z",
+      "modifiedAt": "2025-06-17T19:12:12.761Z"
     }
   ],
   "banktransfers": [
