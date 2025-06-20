@@ -7,6 +7,10 @@
     "username": "TestFail",
     "password": "TestFail"
   },
+  "userNoTransactions": {
+    "username": "usuarioSemTransacoes",
+    "password": "senha123"
+  },
   "newUserSuccess": {
   "firstName": "Heath",
   "lastName": "Harris",
@@ -20,5 +24,12 @@
     "username": "Heath93",
     "password": "s3cret",
     "confirmPassword": "wrongPassword"
-  }
+  },
+  "newUserNoTransactions": {
+    "firstName": "usuario",
+    "lastName": "SemTransacoes",
+    "username": "usuarioSemTransacoes",
+    "password": "senha123",
+    "confirmPassword": "senha123"
+  } 
 }

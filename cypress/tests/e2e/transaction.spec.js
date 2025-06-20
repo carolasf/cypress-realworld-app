@@ -15,20 +15,17 @@ describe('Transfrência de dinheiro', () => {
     it('Deve enviar dinheiro com sucesso', () => {
         loginPage.accessLoginPage();
         loginPage.loginWithUser(userData.userSuccess.username, userData.userSuccess.password);
-
+        //dashboardPage.accessDashboardPage();
         dashboardPage.checkDashboardPage();
+
         dashboardPage.checkBalance().then((saldo) => {
             cy.log('Saldo capturado no teste: ' + saldo);
 
             // Escolhe o valor a ser enviado - por exemplo, metade do saldo
-            let valorParaTransferir = saldo >= 2 ? Math.floor(saldo / 2) : saldo;
+            let valorParaTransferir = saldo;
 
         dashboardPage.accessNewTransaction();
-       
-
-
         contactPage.selectContact();
-
         paymentPage.fillPaymentForm(valorParaTransferir, 'Transferência com base no saldo');
     });
   });
